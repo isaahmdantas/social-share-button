@@ -98,6 +98,8 @@ window.SocialShareButton =
         SocialShareButton.openUrl("http://news.ycombinator.com/submitlink?u=#{url}&t=#{title}", 770, 500)
       when "telegram"
         SocialShareButton.openUrl("https://telegram.me/share/url?text=#{title}&url=#{url}")
-      when "whatsapp"
-        SocialShareButton.openUrl("https://api.whatsapp.com/send?text=#{title}#{url}")
+      when "whatsapp_mobile"
+        SocialShareButton.openUrl("https://api.whatsapp.com/send?text=#{title}%20#{url}")
+      when "whatsapp_web"
+        SocialShareButton.openUrl("https://web.whatsapp.com/send?text=#{title}%20#{url}")
     false
