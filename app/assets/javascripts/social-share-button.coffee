@@ -99,5 +99,5 @@ window.SocialShareButton =
       when "telegram"
         SocialShareButton.openUrl("https://telegram.me/share/url?text=#{title}&url=#{url}")
       when "whatsapp"
-        SocialShareButton.openUrl("https://api.whatsapp.com/send?text=#{title} #{url}")
+        SocialShareButton.openUrl("https://api.whatsapp.com/send?text=#{title}#{url}")
     false
