@@ -32,7 +32,7 @@ window.SocialShareButton =
         hashtags = encodeURIComponent($(el).data(site + '-hashtags') || $parent.data('hashtags') || '')
         via_str = ''
         via_str = "&via=#{via}" if via.length > 0
-        SocialShareButton.openUrl("https://twitter.com/share?url=#{url}&text=#{title}%20#{hastags}#{via_str}")
+        SocialShareButton.openUrl("https://twitter.com/share?url=#{url}&text=#{title}%20#{hashtags}#{via_str}")
       when "douban"
         SocialShareButton.openUrl("http://shuo.douban.com/!service/share?href=#{url}&name=#{title}&image=#{img}&sel=#{desc}", 770, 470)
       when "facebook"
