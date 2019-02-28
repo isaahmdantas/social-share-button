@@ -1,3 +1,4 @@
+$ = jQuery
 window.SocialShareButton =
   openUrl : (url, width = 640, height = 480) ->
     left = (screen.width / 2) - (width / 2)
